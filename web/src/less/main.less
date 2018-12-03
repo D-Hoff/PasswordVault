@@ -1,0 +1,170 @@
+@import 'includes/variables/_screens';
+@import 'includes/variables/_colors';
+html {
+    font-size: 16px;
+    font-size: 100%;
+    height: 100%;
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        background-color: #333745;
+        .__wrapper {
+            left: 0;
+            transition: all linear 0.25s;
+            min-height: 22vh;
+            .well{
+                background-color: whitesmoke;
+                min-width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+
+                .dualButtons{
+                    margin-top: 10px;
+                    .buttonOne{
+
+                    }
+                    .buttonTwo{
+                        float: right;
+                    }
+                }
+
+                .addShelf{
+                    margin-top: -37px;
+                    &.FR{
+                        float: right;
+                    }
+                    &.FL{
+                        float: left;
+                    }
+                }
+
+                .shelfList{
+                    // list-style: none;
+                    .row{
+                        border: 1px solid #b1b1b1!important;
+                        min-height: 50px;
+                        background-color: #e2e2e2;
+                        // margin-left: -40px;
+                        .col-6{
+                            overflow-x: hidden;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+                .createShelf{
+                    .password{
+                        margin-left: 0px;
+                        margin-right: 25px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.floatLeft{
+    float: left;
+}
+.floatRight{
+    float: right;
+}
+.move-right{
+    margin-left: 15px;
+}
+.center-text {
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #c1c1c1!important;
+}
+
+
+
+
+
+
+
+.fancy_accordian {
+    width: 100%;
+    height: 320px;
+    max-width: 800px;
+    overflow: hidden;
+    /*Time for some styling*/
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+
+.fancy_accordian ul {
+    width: 2000px;
+    /*This will give ample space to the last item to move
+    instead of falling down/flickering during hovers.*/
+    margin: 0;
+    padding: 0;
+}
+
+.fancy_accordian li {
+    position: relative;
+    display: block;
+    width: 114px;
+    float: left;
+    border-left: 1px solid #888;
+    margin: 0;
+    height:320px;
+    padding: 0;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    /*Transitions to give animation effect*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    /*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+
+.fancy_accordian ul:hover li {
+    width: 30px;
+}
+
+/*Lets apply hover effects now*/
+
+/*The LI hover style should override the UL hover style*/
+
+.fancy_accordian ul li:hover {
+    width: 640px;
+}
+
+.fancy_accordian li img {
+    width: 640px;
+    width: 640px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Image title styles*/
+
+.fancy_accordian .image_title {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 640px;
+    margin: 0;
+    padding: 0;
+}
+
+.fancy_accordian .image_title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+}
